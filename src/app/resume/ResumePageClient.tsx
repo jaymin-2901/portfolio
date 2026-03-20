@@ -28,12 +28,33 @@ export default function ResumePageClient() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8 flex justify-center"
+          className="mb-8"
         >
-          <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-[var(--primary)]/25 transition-all">
-            <Download className="w-5 h-5" />
-            Download Resume
-          </button>
+          <div className="rounded-2xl overflow-hidden bg-[var(--card)] border border-[var(--border)]">
+            <iframe 
+              src="/Jaymin_Chavda_Resume.pdf" 
+              className="w-full h-[500px] sm:h-[600px] lg:h-[700px]"
+              title="Resume PDF Viewer"
+            />
+          </div>
+          <div className="mt-6 flex justify-center gap-4">
+            <a 
+              href="/Jaymin_Chavda_Resume.pdf" 
+              download="Jaymin_Chavda_Resume.pdf"
+              className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-[var(--primary)]/25 transition-all"
+            >
+              <Download className="w-5 h-5" />
+              Download Resume
+            </a>
+            <a 
+              href="/Jaymin_Chavda_Resume.pdf" 
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] rounded-xl font-semibold hover:bg-[var(--muted)] transition-all"
+            >
+              <Download className="w-5 h-5" />
+              Open in New Tab
+            </a>
+          </div>
         </motion.div>
 
         <div className="space-y-6">
