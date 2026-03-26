@@ -191,9 +191,9 @@ MIT License - feel free to use for personal or commercial projects.
 ## Author
 
 **Jaymin Chavda**
-- GitHub: [@jayminchavda](https://github.com/jayminchavda)
-- LinkedIn: [jayminchavda](https://linkedin.com/in/jayminchavda)
-- Email: 202301226@dau.ac.in
+- GitHub: [@jayminchavda](https://github.com/jaymin-2901)
+- LinkedIn: [jayminchavda](https://linkedin.com/in/jaymin-chavda)
+- Email: 230170146009@vgecg.ac.in
 
 ---
 
