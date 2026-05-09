@@ -5,12 +5,7 @@ import { ThemeProvider } from "@/components/widgets/ThemeProvider";
 import { Navbar } from "@/components/shared/Navbar";
 import { PageTransition } from "@/components/shared/PageTransition";
 import { Footer } from "@/components/sections/Footer";
-import dynamic from "next/dynamic";
-
-const ChatBot = dynamic(
-  () => import("@/components/widgets/ChatBot").then((mod) => mod.ChatBot),
-  { ssr: false }
-);
+import { ChatBotClient } from "@/components/widgets/ChatBotClient";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,7 +78,7 @@ export default function RootLayout({
             <main className="flex-1 pt-16">{children}</main>
           </PageTransition>
           <Footer />
-          <ChatBot />
+          <ChatBotClient />
         </ThemeProvider>
       </body>
     </html>
