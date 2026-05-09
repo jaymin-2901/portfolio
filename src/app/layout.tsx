@@ -5,7 +5,12 @@ import { ThemeProvider } from "@/components/widgets/ThemeProvider";
 import { Navbar } from "@/components/shared/Navbar";
 import { PageTransition } from "@/components/shared/PageTransition";
 import { Footer } from "@/components/sections/Footer";
-import { ChatBot } from "@/components/widgets/ChatBot";
+import dynamic from "next/dynamic";
+
+const ChatBot = dynamic(
+  () => import("@/components/widgets/ChatBot").then((mod) => mod.ChatBot),
+  { ssr: false }
+);
 
 const inter = Inter({
   variable: "--font-inter",

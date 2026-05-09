@@ -104,7 +104,7 @@ export const projects = [
   {
     id: 8,
     title: "Customer Churn Analysis",
-    description: "Repository for the Customer Churn Intelligence Platform project.",
+    description: "Repository for the Customer Churn Intelligence analysis project.",
     tech: ["Jupyter Notebook"],
     category: "Data Science",
     github: "https://github.com/jaymin-2901/Customer-Churn-Intelligence-Platform",
@@ -114,7 +114,7 @@ export const projects = [
   {
     id: 9,
     title: "Nutri AI",
-    description: "Repository for the Nutri AI project.",
+    description: "AI-powered nutrition and food decision platform that analyzes meals using Gemini 1.5 Flash AI. Features intelligent meal scoring, personalized nutrition recommendations, macro tracking dashboard, AI chat assistant, streak system, and healthy food discovery with a modern glassmorphism interface",
     tech: ["JavaScript"],
     category: "Web Application",
     github: "https://github.com/jaymin-2901/nutri--ai",
@@ -195,7 +195,7 @@ export const chatBotResponses: Record<string, string> = {
   greeting: "Hello! I'm Jaymin's AI assistant. How can I help you today?",
   about: "Jaymin Chavda is a B.Tech CSE student at Vishwakarma Government Engineering College (VGEC) (Semester 6) with a CPI of 8.12. He's passionate about Machine Learning and Data Science, aspiring to become a Data Scientist while being a tech enthusiast.",
   skills: "Jaymin is proficient in Python, JavaScript, TypeScript, Java, and C++. He has expertise in web development, machine learning, data science, and database design. He works with tools like React, Node.js, Flask, Scikit-learn, Docker, and Git.",
-  projects: "Jaymin has built several projects including:\n1. Car Price Prediction (ML with Random Forest)\n2. Bansari Homeopathic Clinic Management System\n3. This Portfolio Website\n\nWould you like to know more about any specific project?",
+  projects: "Jaymin has built several projects including:\n1. Car Price Prediction (ML with Random Forest)\n2. Clinic Management System\n3. This Portfolio Website\n\nWould you like to know more about any specific project?",
   availability: "Jaymin is currently open to internship opportunities in machine learning, data science, and web development. Feel free to reach out via email!",
   contact: "You can reach Jaymin at:\nEmail: jaymin29chavda@gmail.com\nLinkedIn: linkedin.com/in/jaymin-chavda\nGitHub: github.com/jaymin_2901",
   education: "Jaymin is pursuing B.Tech in Computer Science and Engineering at Vishwakarma Government Engineering College (VGEC). He's passionate about Machine Learning and Data Science.",
