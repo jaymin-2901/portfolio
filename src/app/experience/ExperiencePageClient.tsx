@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, Rocket } from "lucide-react";
-import { timeline } from "@/lib/constants";
+import { GraduationCap, Briefcase, Rocket, Github, ExternalLink } from "lucide-react";
+import { projects, timeline } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const typeIcons = {
@@ -96,6 +96,83 @@ export default function ExperiencePageClient() {
             );
           })}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 sm:mt-16"
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <span className="text-[var(--primary)] font-semibold tracking-wider uppercase text-xs sm:text-sm">Projects Journey</span>
+            <h2 className="text-2xl sm:text-3xl font-bold mt-2">
+              Full <span className="gradient-text">Project Portfolio</span>
+            </h2>
+            <p className="text-sm sm:text-base text-[var(--foreground-muted)] max-w-2xl mx-auto px-4">
+              A complete view of the projects that shaped my hands-on learning and delivery experience.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+            {projects.map((project) => (
+              <div
+                key={`${project.id}-${project.title}`}
+                className="rounded-2xl bg-[var(--card)] border border-[var(--border)] p-4 sm:p-6 hover:border-[var(--primary)]/50 transition-colors"
+              >
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-[var(--muted)] text-xs font-medium">
+                    {project.category}
+                  </span>
+                </div>
+                <h3 className="text-base sm:text-lg font-bold mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[var(--foreground-muted)] mb-3 sm:mb-4">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                  {project.tech.slice(0, 6).map((tech) => (
+                    <span
+                      key={`${project.id}-${tech}`}
+                      className="px-2 py-0.5 sm:py-1 rounded bg-[var(--muted)] text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.tech.length > 6 && (
+                    <span className="px-2 py-0.5 sm:py-1 rounded bg-[var(--muted)] text-xs font-medium">
+                      +{project.tech.length - 6}
+                    </span>
+                  )}
+                </div>
+                <div className="flex gap-2 sm:gap-3">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--muted)] hover:bg-[var(--primary)] text-xs sm:text-sm font-medium transition-colors"
+                    >
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
+                  )}
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--primary)] hover:bg-[var(--secondary)] text-white text-xs sm:text-sm font-medium transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
