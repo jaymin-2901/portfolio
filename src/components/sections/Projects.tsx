@@ -6,7 +6,7 @@ import { projects } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
-const categories = ["All", "Web Application", "IoT"];
+const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category)))];
 
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");

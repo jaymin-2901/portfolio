@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import Image from "next/image";
 
-const categories = ["All", "Web Application", "Machine Learning"];
+const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category)))];
 
 const projectImages: Record<number, string> = {
   1: "/projects/clinic.svg",
