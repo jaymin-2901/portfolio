@@ -9,12 +9,6 @@ import Image from "next/image";
 
 const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category)))];
 
-const projectImages: Record<number, string> = {
-  1: "/projects/clinic.svg",
-  3: "/projects/portfolio.svg",
-  4: "/projects/car-price.svg",
-};
-
 export default function ProjectsPageClient() {
   const [activeFilter, setActiveFilter] = useState("All");
 
@@ -78,7 +72,7 @@ export default function ProjectsPageClient() {
               >
                 <div className="aspect-video relative overflow-hidden bg-[var(--muted)]">
                   <Image
-                    src={projectImages[project.id] || "/projects/default.svg"}
+                    src={project.image || "/projects/default.svg"}
                     alt={project.title}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

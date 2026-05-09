@@ -18,12 +18,6 @@ const quickLinks = [
   { icon: Briefcase, label: "Resume", href: "/resume", desc: "Download CV" },
 ];
 
-const projectImages: Record<number, string> = {
-  1: "/projects/clinic.svg",
-  3: "/projects/portfolio.svg",
-  4: "/projects/car-price.svg",
-};
-
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -177,7 +171,7 @@ export default function HomePage() {
               >
                 <div className="aspect-video relative overflow-hidden bg-[var(--muted)]">
                   <Image
-                    src={projectImages[project.id] || "/projects/default.svg"}
+                    src={project.image || "/projects/default.svg"}
                     alt={project.title}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

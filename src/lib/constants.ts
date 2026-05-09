@@ -49,7 +49,7 @@ export const projects = [
     category: "Machine Learning",
     github: "https://github.com/jaymin_2901/car-price-prediction",
     live: "",
-    image: "/projects/car-price.jpg",
+    image: "/projects/car-price.svg",
   },
   {
     id: 1,
@@ -59,7 +59,7 @@ export const projects = [
     category: "Web Application",
     github: "https://github.com/jaymin-2901/bansari-clinic",
     live: "https://bansari-clinic.vercel.app",
-    image: "/projects/clinic.jpg",
+    image: "/projects/clinic.svg",
   },
   {
     id: 3,
