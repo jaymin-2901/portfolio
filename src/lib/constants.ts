@@ -69,7 +69,7 @@ export const projects = [
     category: "Web Application",
     github: "https://github.com/jaymin-2901/portfolio",
     live: "https://jaymin-chavda-dev.vercel.app/",
-    image: "/projects/portfolio.jpg",
+    image: "/projects/portfolio.jpeg",
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const projects = [
     category: "Full Stack Development",
     github: "https://github.com/jaymin-2901/resumeiq",
     live: "",
-    image: "/projects/resumeiq.jpg",
+    image: "/projects/resumeiq.jpeg",
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ export const projects = [
     category: "AI & Desktop Application",
     github: "https://github.com/jaymin-2901/Intelligent-Docs-Organizer",
     live: "https://intelligent-docs-organizer.vercel.app",
-    image: "/projects/docs-organizer.jpg",
+    image: "/projects/docs-organizer.jpeg",
   },
   {
     id: 7,
@@ -99,7 +99,7 @@ export const projects = [
     category: "Full Stack Development",
     github: "https://github.com/jaymin-2901/sellfinity-ecommerce-platform",
     live: "https://sellfinity-ecommerce-platform.vercel.app/",
-    image: "/projects/sellfinity.jpg",
+    image: "/projects/sellfinity.jpeg",
   },
   {
     id: 8,
@@ -119,7 +119,7 @@ export const projects = [
     category: "Web Application",
     github: "https://github.com/jaymin-2901/nutri--ai",
     live: "https://nutri-ai-oqyg.vercel.app/",
-    image: "/projects/default.svg",
+    image: "/projects/nutri-ai.jpeg",
   },
 
 
