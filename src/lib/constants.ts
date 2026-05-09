@@ -78,7 +78,7 @@ export const projects = [
     tech: ["React", "Vite", "JavaScript", "Node.js", "Express.js", "MongoDB", "JWT", "AI Integration", "REST API", "HTML", "CSS", "Bootstrap"],
     category: "Full Stack Development",
     github: "https://github.com/jaymin-2901/resumeiq",
-    live: "",
+    live: "https://resumeiq-wine.vercel.app/",
     image: "/projects/resumeiq.jpeg",
   },
   {
