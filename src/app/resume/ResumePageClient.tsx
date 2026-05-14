@@ -31,15 +31,15 @@ export default function ResumePageClient() {
           className="mb-8 flex flex-wrap justify-center gap-4"
         >
           <a 
-            href="/Jaymin_Chavda_Resume.pdf" 
-            download="Jaymin_Chavda_Resume.pdf"
+            href="/Jaymin_Chavda_Resume_clg_final.pdf" 
+            download="Jaymin_Chavda_Resume_clg_final.pdf"
             className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-[var(--primary)]/25 transition-all"
           >
             <Download className="w-5 h-5" />
             Download Resume
           </a>
           <a 
-            href="/Jaymin_Chavda_Resume.pdf" 
+            href="/Jaymin_Chavda_Resume_clg_final.pdf" 
             target="_blank"
             className="flex items-center gap-2 px-6 py-3 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] rounded-xl font-semibold hover:bg-[var(--muted)] transition-all"
           >
